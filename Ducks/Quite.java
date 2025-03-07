@@ -1,5 +1,7 @@
+package ducks;
+
 public class Quite implements QuackBehavior{
-	public voide quack(){
+	public void quack(){
 		// do nothing
 		System.out.println("...");
 	}

@@ -1,11 +1,8 @@
+package ducks;
 
-public abstract Duck {
+public abstract class Duck {
 	FlyBehavior flyBehavior;
 	QuackBehavior quackBehavior;
-
-	// constructor
-	public Duck(){
-	}
 
 	// abstract to be implemented in subclass
 	public abstract void display();
