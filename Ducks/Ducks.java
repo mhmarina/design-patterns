@@ -4,9 +4,14 @@ public class Ducks{
 	public static void main(String[] args){
 		System.out.println("Hello World!");
 		Duck superDuck = new SuperDuck();
-		superDuck.performFly();
-		superDuck.performQuack();
 		superDuck.display();
+		superDuck.performQuack();
+		superDuck.performFly();
+
+		//change flight behvior dynamically
+		System.out.println("Oh no... what's happening to me?");
+		superDuck.setFlyBehavior(new Fly());
+		superDuck.performFly();
 	}
 }
 

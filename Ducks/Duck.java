@@ -15,4 +15,9 @@ public abstract class Duck {
 	public void performQuack(){
 		quackBehavior.quack();
 	}
+
+	// dynamically set fly behavior in runtime
+	public void setFlyBehavior(FlyBehavior fb){
+		this.flyBehavior = fb;
+	}
 }
