@@ -1,3 +1,6 @@
+//Encapsulated Behaviors
+// STRATEGY Pattern
+
 package ducks;
 
 public class Ducks{

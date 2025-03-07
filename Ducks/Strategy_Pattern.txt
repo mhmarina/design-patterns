@@ -1,0 +1,12 @@
+The strategy pattern defines a family of algorithsm, encapsulates each one and makes them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
+
+Notes:
+- Favor composition over inheritance (HAS-A > IS-A) -- code maintainability over reusability: more time is spent maintaining code 
+- Identify which parts of a class vary and which stay the same -- It's worth encapsulating the behaviors that vary into their own interface (ex Quack, Fly in Duck)
+- Program to an interface not an implementation:
+    ex: 
+        Duck duck = new ChildDuck();
+        duck.makeSound(); // makeSound calls quack() from interface
+    vs:
+        Duck ChildDuck = new ChildDuck();
+        duck.quack();
